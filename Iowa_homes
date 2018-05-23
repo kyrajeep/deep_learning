@@ -1,3 +1,4 @@
+# This set of code is from Kaggle Learn. It is in Python.
 import pandas as pd
 
 main_file_path = '../input/train.csv' # this is the path to the Iowa data that you will use
@@ -8,3 +9,15 @@ data = pd.read_csv(main_file_path)
 data.describe()
 two_columns = data[['LotArea', 'OverallQual']]
 two_columns.describe()
+
+from sklearn.tree import DecisionTreeRegressor
+from sklearn.model_selection import train_test_split
+
+train_x,train_y,test_x,test_y = train_test_split(X, y, random state = 0)
+iowa_decision_tree = DecisionTreeRegressor()
+iowa_decision_tree.fit(X,y)
+predictions = iowa_decision_tree.predict(test_x)
+error = mean_absolute_error(test_y,predictions)
+print(error)
+
+
