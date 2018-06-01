@@ -1,0 +1,4 @@
+import pandas as pd
+from sklearn.ensemble import RandomForestRegressor
+
+random_model = RandomForestRegressor()
