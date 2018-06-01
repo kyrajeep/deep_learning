@@ -1,4 +1,11 @@
 import pandas as pd
+from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestRegressor
 
+X = 
+y = data.Price
+
+x_train, y_train, x_test, y_test = train_test_split(X,y)
 random_model = RandomForestRegressor()
+#why would I need a variable to fit the model? do i need a variable? 
+random_model.fit(X,y)
