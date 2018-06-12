@@ -1,4 +1,4 @@
-# This set of code is from Kaggle Learn. It is in Python.
+# This set of code is from Kaggle Learn. 
 import pandas as pd
 
 main_file_path = '../input/train.csv' # this is the path to the Iowa data that you will use
