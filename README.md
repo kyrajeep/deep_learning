@@ -1,2 +1,2 @@
 # Deep-Learning-and-Other
-Practice files that use neural nets and projects in ML.
+Tutorials in Deep Learning and Machine Learning Projects
